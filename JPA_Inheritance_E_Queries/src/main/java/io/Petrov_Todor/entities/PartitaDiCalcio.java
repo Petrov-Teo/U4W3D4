@@ -44,11 +44,11 @@ public class PartitaDiCalcio extends Evento {
 
     public void setVincente() {
         if (golSquadraDiCasa == golSquadraOspite) {
-            this.vincente = null; // È un pareggio
+            this.vincente = null;
         } else if (golSquadraDiCasa > golSquadraOspite) {
-            this.vincente = squadraDiCasa; // Vince la squadra di casa
+            this.vincente = squadraDiCasa;
         } else {
-            this.vincente = squadraOspite; // Vince la squadra ospite
+            this.vincente = squadraOspite;
         }
     }
 

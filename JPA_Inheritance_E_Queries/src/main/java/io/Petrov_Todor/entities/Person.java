@@ -21,6 +21,7 @@ public class Person {
     @OneToMany(mappedBy = "id")
     private List<Participation> partecipation_list;
 
+
     public Person() {
     }
 
@@ -30,6 +31,8 @@ public class Person {
         this.mail = mail;
         this.date_of_birth = date_of_birth;
         this.gender = gender;
+
+
     }
 
     public UUID getId() {

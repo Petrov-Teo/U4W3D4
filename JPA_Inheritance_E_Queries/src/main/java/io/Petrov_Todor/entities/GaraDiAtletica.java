@@ -1,9 +1,15 @@
 package io.Petrov_Todor.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
+
 import java.util.List;
 
+@Entity
 public class GaraDiAtletica extends Evento {
+    @ManyToMany
     protected List<Person> atleti;
+
     protected Person vincitore;
 
     public GaraDiAtletica(List<Person> atleti, Person vincitore) {
